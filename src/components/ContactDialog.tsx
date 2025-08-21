@@ -25,8 +25,8 @@ export function ContactDialog({ children }: ContactDialogProps) {
     // Here you would typically send the form data to your backend
     console.log("Form submitted:", formData);
     toast({
-      title: "Message sent successfully!",
-      description: "We'll get back to you within 24 hours.",
+      title: "Сообщение успешно отправлено!",
+      description: "Мы свяжемся с вами в течение 24 часов.",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
     setOpen(false);
@@ -45,17 +45,17 @@ export function ContactDialog({ children }: ContactDialogProps) {
         <div className="gradient-primary p-6 text-white">
           <DialogHeader>
             <DialogTitle className="text-2xl font-semibold text-white">
-              Get in Touch
+              Связаться с нами
             </DialogTitle>
             <p className="text-blue-100 mt-2">
-              Ready to start your wholesale partnership? Let's discuss your needs.
+              Готовы начать оптовое сотрудничество? Давайте обсудим ваши потребности.
             </p>
           </DialogHeader>
         </div>
         
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="name">Full Name *</Label>
+            <Label htmlFor="name">Полное имя *</Label>
             <Input
               id="name"
               value={formData.name}
@@ -66,7 +66,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
           </div>
           
           <div className="space-y-2">
-            <Label htmlFor="email">Email Address *</Label>
+            <Label htmlFor="email">Email адрес *</Label>
             <Input
               id="email"
               type="email"
@@ -78,7 +78,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
           </div>
           
           <div className="space-y-2">
-            <Label htmlFor="phone">Phone Number</Label>
+            <Label htmlFor="phone">Номер телефона</Label>
             <Input
               id="phone"
               type="tel"
@@ -89,12 +89,12 @@ export function ContactDialog({ children }: ContactDialogProps) {
           </div>
           
           <div className="space-y-2">
-            <Label htmlFor="message">Message *</Label>
+            <Label htmlFor="message">Сообщение *</Label>
             <Textarea
               id="message"
               value={formData.message}
               onChange={(e) => handleInputChange("message", e.target.value)}
-              placeholder="Tell us about your wholesale needs, product requirements, or any questions you have..."
+              placeholder="Расскажите о ваших оптовых потребностях, требованиях к продукции или любых вопросах..."
               required
               className="min-h-[100px] transition-fast"
             />
@@ -107,13 +107,13 @@ export function ContactDialog({ children }: ContactDialogProps) {
               onClick={() => setOpen(false)}
               className="flex-1"
             >
-              Cancel
+              Отмена
             </Button>
             <Button
               type="submit"
               className="flex-1 gradient-primary hover:shadow-medium transition-smooth"
             >
-              Send Message
+              Отправить сообщение
             </Button>
           </div>
         </form>

@@ -4,27 +4,27 @@ import { Building2, Award, Globe, Shield, Truck, HandshakeIcon } from "lucide-re
 
 export function AboutSection() {
   const stats = [
-    { icon: Building2, value: "15+", label: "Years in Business", description: "Established industry presence" },
-    { icon: HandshakeIcon, value: "5,000+", label: "Active Clients", description: "Worldwide partnerships" },
-    { icon: Truck, value: "1M+", label: "Products Delivered", description: "Successful transactions" },
-    { icon: Globe, value: "50+", label: "Countries Served", description: "Global reach" }
+    { icon: Building2, value: "15+", label: "Лет в бизнесе", description: "Устойчивое присутствие на рынке" },
+    { icon: HandshakeIcon, value: "5,000+", label: "Активных клиентов", description: "Партнерства по всему миру" },
+    { icon: Truck, value: "1М+", label: "Доставленных товаров", description: "Успешных сделок" },
+    { icon: Globe, value: "50+", label: "Стран обслуживания", description: "Глобальный охват" }
   ];
 
   const values = [
     {
       icon: Award,
-      title: "Quality Assurance",
-      description: "Every product meets our rigorous quality standards before reaching your business."
+      title: "Контроль качества",
+      description: "Каждый товар соответствует нашим строгим стандартам качества прежде чем попасть в ваш бизнес."
     },
     {
       icon: Shield,
-      title: "Reliable Partnership",
-      description: "Consistent supply chain and dependable delivery schedules you can count on."
+      title: "Надежное партнерство",
+      description: "Стабильная цепочка поставок и надежные графики доставки, на которые можно положиться."
     },
     {
       icon: Globe,
-      title: "Global Network",
-      description: "Extensive supplier relationships enabling competitive pricing and diverse inventory."
+      title: "Глобальная сеть",
+      description: "Обширные связи с поставщиками обеспечивают конкурентные цены и разнообразный ассортимент."
     }
   ];
 
@@ -34,14 +34,14 @@ export function AboutSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-primary border-primary">
-            About Our Company
+            О нашей компании
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Built on Trust, Driven by Excellence
+            Построено на доверии, движимо совершенством
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            For over 15 years, we've been the backbone of successful businesses worldwide, 
-            providing premium wholesale solutions that drive growth and profitability.
+            Уже более 15 лет мы являемся основой успешного бизнеса по всему миру, 
+            предоставляя премиальные оптовые решения, которые способствуют росту и прибыльности.
           </p>
         </div>
 
@@ -66,21 +66,21 @@ export function AboutSection() {
           <div className="space-y-8">
             <div>
               <h3 className="text-3xl font-bold text-foreground mb-6">
-                Our Story
+                Наша история
               </h3>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Founded with a vision to revolutionize wholesale distribution, our company has grown 
-                  from a small local operation to a global leader in B2B commerce.
+                  Основанная с видением революционизировать оптовую торговлю, наша компания выросла 
+                  из небольшого местного предприятия в глобального лидера B2B коммерции.
                 </p>
                 <p>
-                  We understand that every business has unique needs. That's why we've built flexible 
-                  solutions, competitive pricing structures, and personalized service that adapts to 
-                  your requirements.
+                  Мы понимаем, что у каждого бизнеса есть уникальные потребности. Поэтому мы создали гибкие 
+                  решения, конкурентные ценовые структуры и персонализированный сервис, адаптированный под 
+                  ваши требования.
                 </p>
                 <p>
-                  Today, we're proud to serve thousands of businesses across 50+ countries, 
-                  maintaining the same commitment to quality and service that started it all.
+                  Сегодня мы гордимся тем, что обслуживаем тысячи предприятий в 50+ странах, 
+                  сохраняя то же стремление к качеству и сервису, с которого все начиналось.
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@ export function AboutSection() {
 
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-foreground mb-8">
-              Why Choose Us
+              Почему выбирают нас
             </h3>
             {values.map((value, index) => (
               <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth border-0">

@@ -22,12 +22,12 @@ export function Hero() {
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Your Trusted
-                <span className="block text-blue-300">Wholesale Partner</span>
+                Ваш надежный
+                <span className="block text-blue-300">оптовый партнер</span>
               </h1>
               <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed">
-                Connecting businesses with premium products at competitive prices. 
-                Experience reliable wholesale solutions tailored to your needs.
+                Соединяем бизнес с премиальными товарами по конкурентным ценам. 
+                Надежные оптовые решения, адаптированные под ваши потребности.
               </p>
             </div>
             
@@ -37,18 +37,10 @@ export function Hero() {
                   size="lg" 
                   className="gradient-primary shadow-large hover:shadow-large hover:scale-105 transition-smooth text-lg px-8 py-4"
                 >
-                  Start Partnership
+                  Начать сотрудничество
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </ContactDialog>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transition-smooth text-lg px-8 py-4"
-              >
-                View Catalog
-              </Button>
             </div>
             
             {/* Key Stats */}
@@ -58,21 +50,21 @@ export function Hero() {
                   <TrendingUp className="h-6 w-6 text-blue-300" />
                 </div>
                 <div className="text-2xl font-bold">15+</div>
-                <div className="text-sm text-blue-200">Years Experience</div>
+                <div className="text-sm text-blue-200">Лет опыта</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <Users className="h-6 w-6 text-blue-300" />
                 </div>
                 <div className="text-2xl font-bold">5000+</div>
-                <div className="text-sm text-blue-200">Happy Clients</div>
+                <div className="text-sm text-blue-200">Довольных клиентов</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <Package className="h-6 w-6 text-blue-300" />
                 </div>
-                <div className="text-2xl font-bold">50K+</div>
-                <div className="text-sm text-blue-200">Products Sold</div>
+                <div className="text-2xl font-bold">50К+</div>
+                <div className="text-sm text-blue-200">Товаров продано</div>
               </div>
             </div>
           </div>

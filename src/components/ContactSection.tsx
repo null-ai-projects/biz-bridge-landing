@@ -21,8 +21,8 @@ export function ContactSection() {
     e.preventDefault();
     console.log("Form submitted:", formData);
     toast({
-      title: "Message sent successfully!",
-      description: "We'll get back to you within 24 hours.",
+      title: "Сообщение успешно отправлено!",
+      description: "Мы свяжемся с вами в течение 24 часов.",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
@@ -34,23 +34,23 @@ export function ContactSection() {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Office Address",
-      details: ["123 Business District", "Commerce City, CC 12345", "United States"],
+      title: "Адрес офиса",
+      details: ["ул. Деловая, д. 123", "г. Торговый, ТГ 12345", "Россия"],
     },
     {
       icon: Phone,
-      title: "Phone Numbers",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543", "Toll-free: 1-800-WHOLESALE"],
+      title: "Телефоны",
+      details: ["+7 (495) 123-4567", "+7 (495) 987-6543", "Бесплатный: 8-800-КРИСТАЛЛ"],
     },
     {
       icon: Mail,
-      title: "Email Addresses",
-      details: ["sales@wholesale.com", "support@wholesale.com", "partnerships@wholesale.com"],
+      title: "Email адреса",
+      details: ["sales@spk-kristall.ru", "support@spk-kristall.ru", "partners@spk-kristall.ru"],
     },
     {
       icon: Clock,
-      title: "Business Hours",
-      details: ["Monday - Friday: 8:00 AM - 6:00 PM", "Saturday: 9:00 AM - 4:00 PM", "Sunday: Closed"],
+      title: "Часы работы",
+      details: ["Понедельник - Пятница: 9:00 - 18:00", "Суббота: 10:00 - 16:00", "Воскресенье: Выходной"],
     },
   ];
 
@@ -60,14 +60,14 @@ export function ContactSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-primary border-primary">
-            Get in Touch
+            Связаться с нами
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Ready to Start Your Partnership?
+            Готовы начать сотрудничество?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Contact our team today and discover how we can help grow your business 
-            with our comprehensive wholesale solutions.
+            Свяжитесь с нашей командой сегодня и узнайте, как мы можем помочь развитию вашего бизнеса 
+            с нашими комплексными оптовыми решениями.
           </p>
         </div>
 
@@ -76,16 +76,16 @@ export function ContactSection() {
           <div className="lg:col-span-2">
             <Card className="shadow-soft border-0">
               <CardHeader className="gradient-primary text-white">
-                <CardTitle className="text-2xl text-white">Send us a Message</CardTitle>
+                <CardTitle className="text-2xl text-white">Отправить сообщение</CardTitle>
                 <p className="text-blue-100">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Заполните форму ниже, и мы свяжемся с вами в течение 24 часов.
                 </p>
               </CardHeader>
               <CardContent className="p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <Label htmlFor="contact-name">Full Name *</Label>
+                      <Label htmlFor="contact-name">Полное имя *</Label>
                       <Input
                         id="contact-name"
                         value={formData.name}
@@ -96,7 +96,7 @@ export function ContactSection() {
                     </div>
                     
                     <div className="space-y-2">
-                      <Label htmlFor="contact-email">Email Address *</Label>
+                      <Label htmlFor="contact-email">Email адрес *</Label>
                       <Input
                         id="contact-email"
                         type="email"
@@ -109,7 +109,7 @@ export function ContactSection() {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="contact-phone">Phone Number</Label>
+                    <Label htmlFor="contact-phone">Номер телефона</Label>
                     <Input
                       id="contact-phone"
                       type="tel"
@@ -120,12 +120,12 @@ export function ContactSection() {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="contact-message">Message *</Label>
+                    <Label htmlFor="contact-message">Сообщение *</Label>
                     <Textarea
                       id="contact-message"
                       value={formData.message}
                       onChange={(e) => handleInputChange("message", e.target.value)}
-                      placeholder="Please describe your wholesale needs, product requirements, order volumes, or any specific questions you have for our team..."
+                      placeholder="Опишите ваши оптовые потребности, требования к продукции, объемы заказов или любые вопросы для нашей команды..."
                       required
                       className="min-h-[120px] transition-fast"
                     />
@@ -136,7 +136,7 @@ export function ContactSection() {
                     size="lg"
                     className="w-full gradient-primary hover:shadow-medium transition-smooth text-lg py-4"
                   >
-                    Send Message
+                    Отправить сообщение
                   </Button>
                 </form>
               </CardContent>
@@ -174,15 +174,15 @@ export function ContactSection() {
             {/* Additional CTA */}
             <Card className="shadow-soft border-0 gradient-primary text-white">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">Need Immediate Assistance?</h3>
+                <h3 className="text-xl font-semibold mb-2">Нужна срочная помощь?</h3>
                 <p className="text-blue-100 mb-4">
-                  Call our sales team directly for urgent inquiries or immediate support.
+                  Звоните нашей команде продаж для срочных вопросов или немедленной поддержки.
                 </p>
                 <Button 
                   variant="outline" 
                   className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transition-smooth"
                 >
-                  Call Now: +1 (555) 123-4567
+                  Звонить: +7 (495) 123-4567
                 </Button>
               </CardContent>
             </Card>
