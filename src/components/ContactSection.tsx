@@ -40,12 +40,12 @@ export function ContactSection() {
     {
       icon: Phone,
       title: "Телефоны",
-      details: ["+7 (495) 123-4567", "+7 (495) 987-6543", "Бесплатный: 8-800-КРИСТАЛЛ"],
+      details: ["+7 (913) 979-34-97"],
     },
     {
       icon: Mail,
       title: "Email адреса",
-      details: ["sales@spk-kristall.ru", "support@spk-kristall.ru", "partners@spk-kristall.ru"],
+      details: ["sales@spk-kristall.ru"],
     },
     {
       icon: Clock,
@@ -182,7 +182,7 @@ export function ContactSection() {
                   variant="outline" 
                   className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transition-smooth"
                 >
-                  Звонить: +7 (495) 123-4567
+                  Звонить: +7 (913) 979-34-97
                 </Button>
               </CardContent>
             </Card>
