@@ -111,14 +111,6 @@ export function Footer() {
           <div className="text-slate-400 text-sm">
             © 2024 СПК.КРИСТАЛЛ. Все права защищены. | ИНН: 550315249822 | ОГРН: 325554300029889
           </div>
-          
-          <div className="flex items-center space-x-6 text-sm text-slate-400">
-            <span>Сертификат ISO 9001:2015</span>
-            <span>•</span>
-            <span>Рейтинг ТПП: A+</span>
-            <span>•</span>
-            <span>Член Российской ассоциации оптовиков</span>
-          </div>
         </div>
       </div>
     </footer>
