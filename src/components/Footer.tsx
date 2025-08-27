@@ -46,7 +46,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-slate-300">
                 <MapPin className="h-4 w-4 text-blue-400" />
-                <span>ул. Деловая, д. 123, г. Торговый, ТГ 12345</span>
+                <span>Республика Крым, Симферополь, Севастопольская ул., 321</span>
               </div>
               <div className="flex items-center space-x-3 text-slate-300">
                 <Phone className="h-4 w-4 text-blue-400" />
