@@ -8,26 +8,9 @@ export function Footer() {
     company: [
       { label: "О нас", href: "#about" },
       { label: "Наша история", href: "#about" },
-      { label: "Карьера", href: "#" },
-      { label: "Новости", href: "#" },
-    ],
-    services: [
-      { label: "Оптовые решения", href: "#" },
-      { label: "Крупные заказы", href: "#" },
-      { label: "Индивидуальные пакеты", href: "#" },
-      { label: "Логистическая поддержка", href: "#" },
     ],
     support: [
       { label: "Связаться с поддержкой", href: "#contact" },
-      { label: "Отслеживание заказов", href: "#" },
-      { label: "Часто задаваемые вопросы", href: "#" },
-      { label: "Документация", href: "#" },
-    ],
-    legal: [
-      { label: "Политика конфиденциальности", href: "#" },
-      { label: "Условия обслуживания", href: "#" },
-      { label: "Политика cookies", href: "#" },
-      { label: "Правовая информация", href: "#" },
     ],
   };
 
@@ -44,7 +27,7 @@ export function Footer() {
     <footer className="bg-slate-900 text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-3">
@@ -103,41 +86,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Услуги</h4>
-            <ul className="space-y-3">
-              {navigationLinks.services.map((link, index) => (
-                <li key={index}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-slate-300 hover:text-white transition-fast text-left"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
             <h4 className="text-lg font-semibold mb-4">Поддержка</h4>
             <ul className="space-y-3">
               {navigationLinks.support.map((link, index) => (
-                <li key={index}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-slate-300 hover:text-white transition-fast text-left"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Правовая информация</h4>
-            <ul className="space-y-3">
-              {navigationLinks.legal.map((link, index) => (
                 <li key={index}>
                   <button
                     onClick={() => scrollToSection(link.href)}
