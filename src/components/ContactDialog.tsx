@@ -111,7 +111,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
             </Button>
             <Button
               type="submit"
-              className="flex-1 gradient-primary hover:shadow-medium transition-smooth"
+              className="flex-1"
             >
               Отправить сообщение
             </Button>
