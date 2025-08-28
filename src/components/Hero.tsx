@@ -22,12 +22,12 @@ export function Hero() {
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Ваш надежный
-                <span className="block text-blue-300">оптовый партнер</span>
+                Оптовые поставки
+                <span className="block text-blue-300">энергетических напитков</span>
               </h1>
               <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed">
-                Соединяем бизнес с премиальными товарами по конкурентным ценам. 
-                Надежные оптовые решения, адаптированные под ваши потребности.
+                Ведущие бренды энергетиков оптом. Red Bull, Monster, Burn и другие топовые марки 
+                для магазинов, кафе и фитнес-центров по выгодным ценам.
               </p>
             </div>
             
@@ -49,7 +49,7 @@ export function Hero() {
                 <div className="flex items-center justify-center mb-2">
                   <TrendingUp className="h-6 w-6 text-blue-300" />
                 </div>
-                <div className="text-2xl font-bold">15+</div>
+                <div className="text-2xl font-bold">3+</div>
                 <div className="text-sm text-blue-200">Лет опыта</div>
               </div>
               <div className="text-center">
@@ -63,8 +63,8 @@ export function Hero() {
                 <div className="flex items-center justify-center mb-2">
                   <Package className="h-6 w-6 text-blue-300" />
                 </div>
-                <div className="text-2xl font-bold">50К+</div>
-                <div className="text-sm text-blue-200">Товаров продано</div>
+                <div className="text-2xl font-bold">7</div>
+                <div className="text-sm text-blue-200">Топовых брендов</div>
               </div>
             </div>
           </div>
